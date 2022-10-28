@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma za zadaću</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="table-container">
+        <table>
+            <tbody id="tabela">
+                <!-- HEADER -->
+                <div class="row-header-container">
+                    <tr class="row-header">
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Broj telefona</th>
+                        <th>E-mail</th>
+                        <th>Izbriši</th>
+                        <th>Izmijeni</th>
+                    </tr>
+                </div>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FORMA -->
+    <div id="form-container">
+        <form class="form">
+            <!-- IME -->
+            <div>
+                <input required type="text" name="name" id="ime" placeholder="Ime">
+            </div>
+            <!-- PREZIME -->
+            <div>
+                <input required type="text" name="last-name" id="prezime" placeholder="Prezime">
+            </div>
+            <!-- BROJ TELEFONA -->
+            <div>
+                <input required type="text" name="phone" id="brojTelefona" placeholder="Broj telefona">
+            </div>
+            <!-- E-MAIL -->
+            <div>
+                <input required type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+            <!-- DUGME -->
+            <div>
+                <input id="dodaj" type="button" class="dodaj" onclick="dodajKontakt()" value="DODAJ">
+            </div>
+
+        </form>
+
+    </div>
+    <div id="form-update">
+        <form class="form">
+            <!-- IME -->
+            <div>
+                <input type="text" name="name" id="drugoIme" placeholder="Izmijenite ime">
+            </div>
+            <!-- PREZIME -->
+            <div>
+                <input type="text" name="last-name" id="drugoPrezime" placeholder="Izmijenite prezime">
+            </div>
+            <!-- BROJ TELEFONA -->
+            <div>
+                <input type="text" name="phone" id="drugiBrojTelefona" placeholder="Izmijenite broj telefona">
+            </div>
+            <!-- E-MAIL -->
+            <div>
+                <input type="email" name="email" id="drugiEmail" placeholder="Izmijenite e-mail">
+            </div>
+            <!-- DUGME SAČUVAJ -->
+            <div id="sacuvajDugme"></div>
+            <!-- DUGME NAZAD -->
+            <div id="div-nazad">
+                <input id="nazad" type="button" class="nazad" onclick="vrati()" value="Nazad">
+            </div>
+
+        </form>
+
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
